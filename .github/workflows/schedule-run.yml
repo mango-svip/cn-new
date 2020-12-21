@@ -1,8 +1,11 @@
 name: schedule-run
 
 on:
+  push:
+    branches:
+      - master
   schedule:
-    - cron: '33 8 * * *'
+    - cron: '45 8 * * *'
 
 jobs:
 
