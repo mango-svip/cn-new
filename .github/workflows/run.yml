@@ -31,3 +31,5 @@ jobs:
 
     - name: Run
       run: go run ./main.go
+      env:
+        SERVERCHANSECRET: ${{ secrets.SERVERCHANSECRET }}
