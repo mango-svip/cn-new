@@ -68,7 +68,7 @@ func main() {
 
 func getCbInfo(data *CbResponse) (applyCb []Cell, listedCb []Cell) {
 	today := time.Now().Format("2006-01-02")
-	fmt.Println("Today is ", today)
+	fmt.Println("Today is ", time.Now())
 	for _, row := range data.Rows {
 		// 申购债券
 		if row.Cell["apply_date"] == today {

@@ -1,8 +1,6 @@
 name: schedule-run
 
 on:
-  push:
-    branches: [ master ]
   schedule:
     - cron: '24 8 * * *'
 
